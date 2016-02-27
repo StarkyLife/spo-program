@@ -83,7 +83,7 @@
             this.btn_next_step.Name = "btn_next_step";
             this.btn_next_step.Size = new System.Drawing.Size(104, 23);
             this.btn_next_step.TabIndex = 24;
-            this.btn_next_step.Text = "Следующий шаг";
+            this.btn_next_step.Text = "Второй проход";
             this.btn_next_step.UseVisualStyleBackColor = true;
             this.btn_next_step.Click += new System.EventHandler(this.btn_next_step_Click);
             // 

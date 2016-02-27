@@ -101,32 +101,32 @@ namespace MacroProcessor34
                         throw new SPException("Макроопределения внутри макросов запрещены");
                     }
                     CheckSourceEntity.checkMEND(se, macroFlag);
-                    
-                    //foreach (SourceEntity mc in mbMacroCall)
-                    //{
-                    //    if (mc.operation == this.macroName)
-                    //    {
-                    //        TMOEntity currentTe = TMO.searchInTMO(this.macroName);
-                    //        CheckSourceEntity.checkMacroSubstitution(mc);
-                    //        List<SourceEntity> res = CheckBody.checkMacroBody(currentTe);
-                    //        // результат макроподстановки
-                    //        List<SourceEntity> macroSubs = new List<SourceEntity>();
-                    //        foreach (SourceEntity str in res)
-                    //        {
-                    //            macroSubs.Add(Utils.print(str));
-                    //        }
-                    //        // Заменяем в результате макровызов на результат макроподстановки
-                    //        for (int i = 0; i < this.result.Count; i++)
-                    //        {
-                    //            if (this.result[i].operation == mc.operation && this.result[i].isRemove == "true")
-                    //            {
-                    //                this.result.Remove(this.result[i]);
-                    //                this.result.InsertRange(i, macroSubs);
-                    //                i += macroSubs.Count - 1;
-                    //            }
-                    //        }
-                    //    }
-                    //}
+
+                    foreach (SourceEntity mc in mbMacroCall)
+                    {
+                        if (mc.operation == this.macroName)
+                        {
+                            TMOEntity currentTe = TMO.searchInTMO(this.macroName);
+                            CheckSourceEntity.checkMacroSubstitution(mc, currentTe);
+                            List<SourceEntity> res = CheckBody.checkMacroBody(currentTe, operands);
+                            // результат макроподстановки
+                            List<SourceEntity> macroSubs = new List<SourceEntity>();
+                            foreach (SourceEntity str in res)
+                            {
+                                macroSubs.Add(Utils.print(str));
+                            }
+                            // Заменяем в результате макровызов на результат макроподстановки
+                            for (int i = 0; i < this.result.Count; i++)
+                            {
+                                if (this.result[i].operation == mc.operation && this.result[i].isRemove == "true")
+                                {
+                                    this.result.Remove(this.result[i]);
+                                    this.result.InsertRange(i, macroSubs);
+                                    i += macroSubs.Count - 1;
+                                }
+                            }
+                        }
+                    }
                     this.macroFlag = false;
                     this.macroName = null;
                 }
@@ -167,11 +167,11 @@ namespace MacroProcessor34
                         {
                             // Добавляем строку в список подозрительных на макровызов и в результат
                             se = Utils.print(se);
-                            //if (te == TMO.root && macroFlag == false)
-                            //{
-                            //    se.isRemove = "true";
-                            //    mbMacroCall.Add(se);
-                            //}
+                            if (te == TMO.root && macroFlag == false)
+                            {
+                                se.isRemove = "true";
+                                mbMacroCall.Add(se);
+                            }
                             result.Add(se);
                         }
                     }
