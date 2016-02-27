@@ -1,0 +1,23 @@
+prog1  start 100
+
+global v
+
+mac macro
+add r1 r2
+loadr1
+saver1
+mend
+
+mac
+
+mac2 macro
+jmp m2
+set v 5
+add r1 v
+inc v
+add r2 v
+mend
+
+mac2
+
+end

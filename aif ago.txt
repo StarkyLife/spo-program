@@ -1,0 +1,17 @@
+prog1 100
+global c 1
+global a 2
+
+mac macro
+m1: add 1 2
+ago m2
+if 1==1
+aif c<a m1
+else
+m2: jmp a1 
+endif
+mend
+
+mac
+
+end

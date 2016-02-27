@@ -1,0 +1,43 @@
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe.config
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.MainForm.resources
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csproj.GenerateResource.Cache
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.pdb
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.exe
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.pdb
+C:\Users\Андрей\Desktop\Сергей\C#\СПО Сотыч\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe.config
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.exe
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.pdb
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.pdb
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.MainForm.resources
+C:\Users\Administrator\Downloads\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csproj.GenerateResource.Cache
+D:\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe.config
+D:\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.exe
+D:\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.pdb
+D:\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe
+D:\34\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.pdb
+D:\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csprojResolveAssemblyReference.cache
+D:\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.MainForm.resources
+D:\34\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csproj.GenerateResource.Cache
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe.config
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.exe
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.pdb
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.pdb
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csprojResolveAssemblyReference.cache
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.MainForm.resources
+F:\Моя папка\Учеба\7 семестр\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csproj.GenerateResource.Cache
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe.config
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.exe
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.pdb
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.pdb
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csprojResolveAssemblyReference.cache
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.MainForm.resources
+D:\University(current)\СПО\Системное программное обеспечение\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.csproj.GenerateResource.Cache
+D:\University(current)\СПО\Курсач\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\bin\Debug\MacroProcessor34.exe.config
+D:\University(current)\СПО\Курсач\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.exe
+D:\University(current)\СПО\Курсач\Курсач СПО(34)\MacroProcessor34\MacroProcessor34\obj\Debug\MacroProcessor34.pdb
