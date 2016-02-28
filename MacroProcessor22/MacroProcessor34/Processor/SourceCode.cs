@@ -127,8 +127,21 @@ namespace MacroProcessor34
                             }
                         }
                     }
-                    this.macroFlag = false;
-                    this.macroName = null;
+
+                    TMOEntity curTe = TMO.searchInTMO(this.macroName);
+                    curTe.IsFinished = true;
+
+                    var prevTe = TMO.GetPrevNotFinishedMacro();
+                    if (prevTe != null)
+                    {
+                        this.macroFlag = true;
+                        this.macroName = prevTe.name;
+                    }
+                    else
+                    {
+                        this.macroFlag = false;
+                        this.macroName = null;
+                    }
                 }
                 else
                 {
@@ -249,10 +262,10 @@ namespace MacroProcessor34
             {
                 throw new SPException("Макрос " + se.label + " уже описан: " + se.sourceString);
             }
-            if (macroFlag == true)
-            {
-                throw new SPException("Макроопределения внутри макроса запрещены: " + se.sourceString);
-            }
+            //if (macroFlag == true)
+            //{
+            //    throw new SPException("Макроопределения внутри макроса запрещены: " + se.sourceString);
+            //}
             //if (se.operands.Count != 0)
             //{
             //    throw new SPException("У макроса не должно быть параметров: " + se.sourceString);

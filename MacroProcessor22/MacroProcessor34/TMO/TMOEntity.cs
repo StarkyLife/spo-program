@@ -20,6 +20,8 @@ namespace MacroProcessor34
         // если будет 10 000 000 итераций - считаем это бесконечным циклом:)
         private int counter { get; set; }
 
+        public bool IsFinished = false;
+
         public TMOEntity()
         {
             this.local = new Dictionary<string, int?>();

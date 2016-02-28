@@ -36,7 +36,17 @@ namespace MacroProcessor34
         /// </summary>
         public static bool isInTMO(string name)
         {
-            return !(searchInTMO(name) == null);
+            return searchInTMO(name) != null;
+        }
+
+        /// <summary>
+        /// Достать предыдущий макрос (Вложенные макроопределния - да)
+        /// </summary>
+        /// <returns></returns>
+        public static TMOEntity GetPrevNotFinishedMacro()
+        {
+            TMOEntity result = (from te in TMO.entities where !te.IsFinished select te).LastOrDefault();
+            return result;
         }
 
         /// <summary>
