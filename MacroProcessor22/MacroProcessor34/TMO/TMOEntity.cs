@@ -295,11 +295,11 @@ namespace MacroProcessor34
             List<SourceEntity> result = new List<SourceEntity>();
             foreach (SourceEntity se in te.body)
             {
-                // Проверка на использование меток внутри макроса
-                //if (!String.IsNullOrEmpty(se.label) && se.operation != "MACRO")
-                //{
-                //    throw new SPException("Метки внутри макроса " + te.name + " запрещены");
-                //}
+                //Проверка на использование меток внутри макроса
+                if (!String.IsNullOrEmpty(se.label) && se.operation != "MACRO")
+                {
+                    throw new SPException("Метки внутри макроса " + te.name + " запрещены");
+                }
                 result.Add(se.Clone());
             }
 
