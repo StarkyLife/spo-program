@@ -159,22 +159,25 @@ namespace MacroProcessor34
                         // макровызов
                         if (TMO.isInTMO(operation))
                         {
-                            if (te == TMO.root)
-                            {
-                                TMOEntity currentTe = TMO.searchInTMO(operation);
-                                CheckSourceEntity.checkMacroSubstitution(se, currentTe);
-                                CheckBody.checkMacroRun(se, te, currentTe);
 
-                                List<SourceEntity> res = CheckBody.checkMacroBody(currentTe, operands);
-                                foreach (SourceEntity str in res)
-                                {
-                                    result.Add(Utils.print(str));
-                                }
-                            }
-                            else
+                            TMOEntity currentTe = TMO.searchInTMO(operation);
+                            CheckSourceEntity.checkMacroSubstitution(se, currentTe);
+                            CheckBody.checkMacroRun(se, te, currentTe);
+
+                            List<SourceEntity> res = CheckBody.checkMacroBody(currentTe, operands);
+                            foreach (SourceEntity str in res)
                             {
-                                throw new SPException("Макровызовы внутри макроса запрещены");
+                                result.Add(Utils.print(str));
                             }
+
+                            //if (te == TMO.root)
+                            //{
+                                
+                            //}
+                            //else
+                            //{
+                            //    throw new SPException("Макровызовы внутри макроса запрещены");
+                            //}
                         }
                         else
                         {
@@ -331,16 +334,16 @@ namespace MacroProcessor34
             {
                 throw new SPException("Макрос " + macroName + " не описан полностью: " + se.sourceString);
             }
-            foreach (TMOEntity te in TMO.entities)
-            {
-                foreach (SourceEntity sse in te.body)
-                {
-                    if (TMO.isInTMO(sse.operation))
-                    {
-                        throw new SPException("Макровызовы внутри макроса запрещены");
-                    }
-                }
-            }
+            //foreach (TMOEntity te in TMO.entities)
+            //{
+            //    foreach (SourceEntity sse in te.body)
+            //    {
+            //        if (TMO.isInTMO(sse.operation))
+            //        {
+            //            throw new SPException("Макровызовы внутри макроса запрещены");
+            //        }
+            //    }
+            //}
         }
 
         /// <summary>
@@ -508,13 +511,13 @@ namespace MacroProcessor34
         /// <param name="se">макрос TMOEntity</param>
         public static List<SourceEntity> checkMacroBody(TMOEntity te, List<String> operands)
         {
-            foreach (SourceEntity se in te.body)
-            {
-                if (TMO.isInTMO(se.operation))
-                {
-                    throw new SPException("Макровызовы внутри макроса запрещены: " + se.sourceString);
-                }
-            }
+            //foreach (SourceEntity se in te.body)
+            //{
+            //    if (TMO.isInTMO(se.operation))
+            //    {
+            //        throw new SPException("Макровызовы внутри макроса запрещены: " + se.sourceString);
+            //    }
+            //}
             List<SourceEntity> result = te.invoke(operands.ToArray());
             return result;
         }
