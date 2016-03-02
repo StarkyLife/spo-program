@@ -126,8 +126,8 @@ namespace MacroProcessor34
             }
             if (this.index == this.sourceCode.entities.Count)
             {
-                Console.WriteLine("\nПрограмма успешно завершила работу\n");
-                this.isEnd = true;
+                Console.WriteLine("\nПервый проход выполнен\n");
+                //this.isEnd = true;
                 return;
             }
         }
@@ -144,7 +144,7 @@ namespace MacroProcessor34
             }
             if (firstEnd == true)
             {
-                Console.WriteLine("\n1 проход уже завершен. Перезапустите программу");
+                Console.WriteLine("\n1 проход уже завершен.");
                 return;
             }
             this.index = 0;
@@ -156,7 +156,7 @@ namespace MacroProcessor34
                     if (this.index == this.sourceCode.entities.Count)
                     {
                         this.firstEnd = true;
-                        isEnd = true;
+                        //isEnd = true;
                         return;
                     }
                     if (isEnd) return;
@@ -187,8 +187,8 @@ namespace MacroProcessor34
         /// </summary>
         public string getProgGuide()
         {
-            return "1 - шаг вперед\n" +
-                    "2 - выполнить 1 проход\n" +
+            return "1 - выполнить 1 проход\n" +
+                    "2 - выполнить 2 проход\n" +
                     "3 - распечатать Исходный код\n" +
                     "4 - распечатать Ассемблерный код\n" +
                     "5 - распечатать таблицу глобальных переменных\n" +

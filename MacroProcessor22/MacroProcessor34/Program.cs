@@ -54,23 +54,7 @@ namespace MacroProcessor34
                         switch (ch)
                         {
                             case "1":
-                                if (!program.isEnd)
-                                {
-                                    if (program.firstEnd == true)
-                                    {
-                                        Console.WriteLine("\n Первый проход уже выполнен, перезапустите программу.");
-                                        break;
-                                    }
-                                    program.step = true;
-                                    Console.WriteLine("\nОчередной шаг выполнен!\n");
-                                    program.nextStep();
-                                }
-                                else
-                                {
-                                    Console.WriteLine("\nПрограмма завершила свои действия. Запустите ее заново.\n");
-                                }
-                                break;
-                            case "2":
+                                Console.Clear();
                                 if (!program.isEnd)
                                 {
                                     program.firstRun();
@@ -80,39 +64,97 @@ namespace MacroProcessor34
                                 {
                                     Console.WriteLine("\nПрограмма завершила свои действия. Запустите ее заново.\n");
                                 }
+                                
+                                break;                                
+                            case "2":
+                                Console.Clear();
+                                if (!program.isEnd)
+                                {
+                                    if (program.firstEnd == true)
+                                    {
+                                        program.secondEnd = true;
+                                        program.isEnd = true;
+                                        Console.WriteLine("\nВторой проход выполнен\n");
+                                        break;
+                                    }
+                                    else
+                                    {
+                                        Console.WriteLine("\nВыполните сначала 1 проход");
+                                    }
+                                    
+                                }
+                                else
+                                {
+                                    Console.WriteLine("\nПрограмма завершила свои действия. Запустите ее заново.\n");
+                                }
                                 break;
                             case "3":
+                                Console.Clear();
                                 Console.WriteLine("\nИсходный код\n");
                                 foreach (string str in program.sourceStrings)
                                 {
                                     Console.WriteLine(str);
                                 }
                                 Console.WriteLine();
+                                Console.ReadKey();
                                 break;
                             case "4":
-                                Console.WriteLine("\nАссемблерный код\n");
-                                program.sourceCode.printAsm();
-                                Console.WriteLine();
+                                Console.Clear();
+                                if (program.secondEnd)
+                                {
+                                    Console.WriteLine("\nАссемблерный код\n");
+                                    program.sourceCode.printAsm();
+                                    Console.WriteLine();
+                                    Console.ReadKey();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("\nАссемблерный код не сгенерирован.\n");
+                                }
+                                
                                 break;
                             case "5":
-                                Console.WriteLine("\nТаблица глобальных переменных\n");
-                                Global.printGlobal();
-                                Console.WriteLine();
+                                Console.Clear();
+                                if (program.firstEnd)
+                                {
+                                    Console.WriteLine("\nТаблица глобальных переменных\n");
+                                    Global.printGlobal();
+                                    Console.WriteLine();
+                                    Console.ReadKey();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("\nВыполните сначала 1 проход.\n");
+                                }
+                                
                                 break;
                             case "6":
-                                Console.WriteLine("\nТМО\n");
-                                TMO.printTMO();
-                                Console.WriteLine();
+                                Console.Clear();
+                                if (program.firstEnd)
+                                {
+                                    Console.WriteLine("\nТМО\n");
+                                    TMO.printTMO();
+                                    Console.WriteLine();
+                                    Console.ReadKey();
+                                }
+                                else
+                                {
+                                    Console.WriteLine("\nВыполните сначала 1 проход.\n");
+                                }
+                                
                                 break;
                             case "8":
+                                Console.Clear();
                                 Console.WriteLine("\nОбновлено все\n");
                                 TMO.refresh();
                                 Global.refresh();
                                 program = new ConsoleProgram(args);
                                 program.sourceCode.result = new List<SourceEntity>();
                                 Console.WriteLine();
+                                
                                 break;
                             case "7":
+                                Console.Clear();
                                 try
                                 {
                                     StreamWriter sw = new StreamWriter(program.output_file);
