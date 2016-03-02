@@ -24,13 +24,14 @@ namespace MacroProcessor34
             this.Show();
             this.Activate();
             this.program = new GUIProgram(tb_source_code);
+            btn_next_step.Enabled = false;
         }
 
         /// <summary>
         /// 2 проход
         /// </summary>
         private void btn_next_step_Click(object sender, EventArgs e)
-        {
+        {            
             program.sourceCode.printAsm(tb_result);
             btn_next_step.Enabled = false;
         }
