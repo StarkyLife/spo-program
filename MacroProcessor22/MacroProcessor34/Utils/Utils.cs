@@ -10,7 +10,7 @@ namespace MacroProcessor34
     {
         public static string[] symbols = { "#", "$", "%", "!", "@", "^", "&", "*", "-", "[", "\"", "*", "(", ")", "\\", "/", "?", "№", ";", ":", "_", "+", "=", "[", "]", "{", "}", "|", "<", ">", "`", "~", ".", ",", "'", " " };
         public static string[] dirs = { "BYTE", "RESB", "RESW", "WORD" };
-        public static string[] keyWords = { "START", "END", "MACRO", "MEND", "WHILE", "ENDW", "IF", "ELSE", "ENDIF", "GLOBAL", "SET", "INC", "ADD", "SAVER1", "SAVER2", "LOADR1", "JMP" };
+        public static string[] keyWords = { "START", "END", "MACRO", "MEND", "WHILE", "ENDW", /*"IF", "ELSE", "ENDIF",*/ "GLOBAL", "SET", "INC", "ADD", "SAVER1", "SAVER2", "LOADR1", "JMP" };
         public static string rus = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
         public static string[] signs = { "==", ">=", "<=", "!=", ">", "<" };
 

@@ -102,7 +102,7 @@ namespace MacroProcessor34
             }
         }
 
-        #region Хрень
+        #region Доп. возможности
 
         /// <summary>
         /// Обновить все данные, заново начать прогу

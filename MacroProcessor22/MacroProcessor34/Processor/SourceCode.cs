@@ -151,8 +151,7 @@ namespace MacroProcessor34
                     }
                     else
                     {
-                        if (te == TMO.root && (operation == "IF" || operation == "ELSE" || operation == "ENDIF" ||
-                            operation == "WHILE" || operation == "ENDW"))
+                        if (te == TMO.root && (operation == "WHILE" || operation == "ENDW"))
                         {
                             throw new SPException("Использование директивы " + operation + " возможно только в теле макроса: " + se.sourceString);
                         }
