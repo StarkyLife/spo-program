@@ -70,11 +70,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(453, 451);
+            this.label3.Location = new System.Drawing.Point(434, 451);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
+            this.label3.Size = new System.Drawing.Size(100, 13);
             this.label3.TabIndex = 25;
-            this.label3.Text = "Ошибка";
+            this.label3.Text = "Ошибка 1 прохода";
             // 
             // btn_next_step
             // 

@@ -65,6 +65,7 @@ namespace MacroProcessor34
                 this.program.nextFirstStep(this.tb_result);
                 TMO.printTMO(this.dgv_tmo);
                 Global.printGlobal(this.dgv_global);
+                
             }
             catch (SPException ex)
             {
@@ -100,6 +101,10 @@ namespace MacroProcessor34
                 //this.btn_next_step_Click(sender, e);
                 this.btn_step();
             }
+            if (string.IsNullOrEmpty(tb_error.Text))
+            {
+                label3.Text = "Ошибка 2 прохода";
+            }
         }
 
         #region Доп. возможности
@@ -116,6 +121,8 @@ namespace MacroProcessor34
             Global.printGlobal(this.dgv_global);
 
             this.enableButtons();
+            btn_next_step.Enabled = false;
+            label3.Text = "Ошибка 1 прохода";
         }
 
         /// <summary>
@@ -127,6 +134,8 @@ namespace MacroProcessor34
             {
                 this.loadFile();
                 enableButtons();
+                btn_next_step.Enabled = false;
+                label3.Text = "Ошибка 1 прохода";
                 this.tb_error.Text = String.Empty;
             }
             catch (Exception ex)
